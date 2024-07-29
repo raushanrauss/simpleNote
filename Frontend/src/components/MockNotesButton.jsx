@@ -1,9 +1,9 @@
 import Button from '@material-ui/core/Button'
-import { useStyles } from 'styles/MockNotesButtonStyle'
+import { useStyles } from '../styles/MockNotesButtonStyle'
 import { useDispatch } from 'react-redux'
-import { mockNotes } from 'redux/notesReducer'
+import { mockNotes } from '../redux/notesReducer'
 import { useContext } from 'react'
-import { AuthContext } from 'AuthContext/AuthContext'
+import { AuthContext } from '../AuthContext/AuthContext'
 import { useNavigate } from 'react-router-dom'
 
 export default function MockNotesButton() {

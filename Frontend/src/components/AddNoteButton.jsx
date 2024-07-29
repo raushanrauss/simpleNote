@@ -1,11 +1,11 @@
 import Button from '@material-ui/core/Button'
 import AddIcon from '@material-ui/icons/Add'
-import { useStyles } from 'styles/AddNoteButtonStyle'
+import { useStyles } from '../styles/AddNoteButtonStyle'
 import { useDispatch } from 'react-redux'
-import { toggleNotesForm } from 'redux/notesReducer'
+import { toggleNotesForm } from '../redux/notesReducer'
 import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { AuthContext } from 'AuthContext/AuthContext'
+import { AuthContext } from '../AuthContext/AuthContext'
 
 export default function AddNoteButton() {
   const classes = useStyles()

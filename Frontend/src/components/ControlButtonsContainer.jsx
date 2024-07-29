@@ -1,8 +1,8 @@
-import ControlButton from 'components/ControlButton'
-import { useStyles } from 'styles/ControlButtonsStyle'
+import ControlButton from './ControlButton'
+import { useStyles } from '../styles/ControlButtonsStyle'
 import { useSelector, useDispatch } from 'react-redux'
-import { setActiveCategory } from 'redux/notesReducer'
-import notesCategories from 'util/NotesCategories'
+import { setActiveCategory } from '../redux/notesReducer'
+import notesCategories from '../util/NotesCategories'
 
 export default function ControlButtons() {
   const classes = useStyles()

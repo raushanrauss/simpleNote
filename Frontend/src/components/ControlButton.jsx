@@ -1,6 +1,6 @@
 import Button from '@material-ui/core/Button'
-import { useStyles } from 'styles/ControlButtonsStyle'
-import theme from 'theme'
+import { useStyles } from '../styles/ControlButtonsStyle'
+import theme from '../theme'
 
 export default function ControlButtons({
   name,

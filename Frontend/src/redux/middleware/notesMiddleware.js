@@ -1,4 +1,4 @@
-import { saveNotes, sortAndFilter } from 'redux/notesReducer'
+import { saveNotes, sortAndFilter } from '../notesReducer'
 
 const notesMiddleware = (store) => (next) => (action) => {
   next(action)

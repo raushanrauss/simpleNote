@@ -1,9 +1,9 @@
-import addNoteImage from 'images/add-note-illustration.svg'
-import searchNoteImage from 'images/search-image.svg'
-import MockNotesButton from 'components/MockNotesButton'
+import addNoteImage from '../images/add-note-illustration.svg'
+import searchNoteImage from '../images/search-image.svg'
+import MockNotesButton from './MockNotesButton'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
-import { useStyles } from 'styles/NoNotesIllustrationStyle'
+import { useStyles } from '../styles/NoNotesIllustrationStyle'
 import { useSelector } from 'react-redux'
 
 export default function NoNotesIllustration() {

@@ -9,10 +9,10 @@ import InputBase from '@material-ui/core/InputBase'
 import TextareaAutosize from '@material-ui/core/TextareaAutosize'
 import Select from '@material-ui/core/Select'
 import MenuItem from '@material-ui/core/MenuItem'
-import { useStyles } from 'styles/NotesFormStyle'
+import { useStyles } from '../styles/NotesFormStyle'
 import { useSelector, useDispatch } from 'react-redux'
-import { toggleNotesForm, createUpdateNote } from 'redux/notesReducer'
-import notesCategories from 'util/NotesCategories'
+import { toggleNotesForm, createUpdateNote } from '../redux/notesReducer'
+import notesCategories from '../util/NotesCategories'
 
 export default function NotesForm() {
   const initialFormState = { title: '', description: '', category: '' }

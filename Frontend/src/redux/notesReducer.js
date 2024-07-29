@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import mockData from 'util/mockNotes'
+import mockData from '../util/mockNotes'
 
 export const slice = createSlice({
   name: 'notes',

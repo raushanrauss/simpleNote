@@ -1,5 +1,5 @@
 import AutorenewIcon from '@material-ui/icons/Autorenew'
-import { useStyles } from 'styles/PendingNotesStyle'
+import { useStyles } from '../styles/PendingNotesStyle'
 
 export default function PendingNotes() {
   const classes = useStyles()

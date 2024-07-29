@@ -1,9 +1,9 @@
 import FormControl from '@material-ui/core/FormControl'
 import Search from '@material-ui/icons/Search'
 import InputBase from '@material-ui/core/InputBase'
-import { useStyles } from 'styles/SearchInputStyle'
+import { useStyles } from '../styles/SearchInputStyle'
 import { useDispatch } from 'react-redux'
-import { setSearchValue } from 'redux/notesReducer'
+import { setSearchValue } from '../redux/notesReducer'
 
 export default function SearchBox() {
   const classes = useStyles()

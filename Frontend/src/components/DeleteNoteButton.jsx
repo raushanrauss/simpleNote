@@ -8,7 +8,7 @@ import DialogContentText from '@material-ui/core/DialogContentText'
 import DialogTitle from '@material-ui/core/DialogTitle'
 import IconButton from '@material-ui/core/IconButton'
 import DeleteIcon from '@material-ui/icons/Delete'
-import { useStyles } from 'styles/NoteStyle'
+import { useStyles } from '../styles/NoteStyle'
 
 export default function DeleteNoteButton({ title, onDelete }) {
   const classes = useStyles()

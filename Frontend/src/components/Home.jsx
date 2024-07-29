@@ -1,18 +1,19 @@
-import React, { useContext } from 'react';
-import SearchBox from 'components/SearchBox';
-import ControlButtonsContainer from 'components/ControlButtonsContainer';
-import AddNoteButton from 'components/AddNoteButton';
-import ProgressionIndicator from 'components/ProgressionIndicator';
-import NotesList from 'components/NotesList';
-import NotesForm from 'components/NotesForm';
-import LogoutButton from 'components/LogoutButton';
+import  { useContext } from 'react';
+import ControlButtonsContainer from './ControlButtonsContainer';
+import AddNoteButton from './AddNoteButton';
+import ProgressionIndicator from './ProgressionIndicator';
+import NotesList from './NotesList';
+import NotesForm from './NotesForm';
+import LogoutButton from './LogoutButton';
 import Grid from '@material-ui/core/Grid';
-import { useStyles } from 'styles/AppStyle';
-import { AuthContext } from 'AuthContext/AuthContext';
+import { AuthContext } from '../AuthContext/AuthContext';
+import SearchBox from './SearchBox';
+import { useStyles } from '../styles/SearchInputStyle';
 
 const Home = () => {
     const classes = useStyles();
     const { user } = useContext(AuthContext);
+    console.log(user);
     return (
         <div className={classes.root}>
             <Grid container spacing={3} direction="column" className="notes">

@@ -1,5 +1,5 @@
 import LinearProgress from '@material-ui/core/LinearProgress'
-import { useStyles } from 'styles/ProgressionIndicatorStyle'
+import { useStyles } from '../styles/ProgressionIndicatorStyle'
 import { useSelector } from 'react-redux'
 
 export default function ProgressionIndicator() {
