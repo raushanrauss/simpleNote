@@ -3,7 +3,7 @@ import AddIcon from '@material-ui/icons/Add'
 import { useStyles } from 'styles/AddNoteButtonStyle'
 import { useDispatch } from 'react-redux'
 import { toggleNotesForm } from 'redux/notesReducer'
-import { useContext, useState } from 'react'
+import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AuthContext } from 'AuthContext/AuthContext'
 

@@ -7,7 +7,7 @@ const AuthProvider = ({ children }) => {
         if (token) {
             setUser({ token });
         }
-    },[])
+    },[token])
   
     return (
         <AuthContext.Provider value={{user}}>
