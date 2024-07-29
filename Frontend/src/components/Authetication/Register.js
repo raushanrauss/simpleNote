@@ -33,7 +33,7 @@ const Register = () => {
         }
 
         try {
-            await axios.post('http://localhost:8000/user/register', {
+            await axios.post('https://simplenote-fn79.onrender.com/user/register', {
                 username,
                 email,
                 password,

@@ -24,7 +24,7 @@ const Login = () => {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:8000/user/login', {
+            const response = await axios.post('https://simplenote-fn79.onrender.com/user/login', {
                 email,
                 password,
             });
@@ -38,7 +38,7 @@ const Login = () => {
             // Handle successful login (e.g., redirect to the dashboard)
             console.log('Login successful:', response.data);
             // Redirect to the dashboard or another protected route
-            window.location.href = '/';
+            window.location.href = '/React-Notes-App';
         } catch (err) {
             // Handle error (e.g., show error message)
             setError('Login failed. Please check your credentials and try again.');
