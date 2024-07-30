@@ -23,7 +23,7 @@ const Login = () => {
 
     const handleLogin = async (e) => {
         e.preventDefault();
-        try {
+        try {  
             const response = await axios.post('https://simplenote-fn79.onrender.com/user/login', {
                 email,
                 password,

@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 import {
     Box,
@@ -27,6 +27,9 @@ const Register = () => {
     const handleRegister = async (e) => {
         e.preventDefault();
 
+        // Clear previous error
+        setError('');
+
         if (password !== confirmPassword) {
             setError('Passwords do not match');
             return;
@@ -37,13 +40,9 @@ const Register = () => {
                 username,
                 email,
                 password,
-                confirmPassword,
+                confirmPassword
             });
             navigate('/login');
-            setUsername('');
-            setEmail('');
-            setPassword('');
-            setConfirmPassword('');
         } catch (err) {
             setError('Registration failed. Please try again.');
             console.error(err);
@@ -69,7 +68,7 @@ const Register = () => {
                         Register
                     </Typography>
                     <Box component="form" onSubmit={handleRegister} sx={{ mt: 1 }}>
-                        {error && <Typography color="error">{error}</Typography>}
+                        {error && <Typography color="error" sx={{ mb: 2 }}>{error}</Typography>}
                         <TextField
                             margin="normal"
                             required
@@ -101,7 +100,7 @@ const Register = () => {
                             label="Password"
                             type="password"
                             id="password"
-                            autoComplete="current-password"
+                            autoComplete="new-password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                         />
@@ -113,7 +112,7 @@ const Register = () => {
                             label="Confirm Password"
                             type="password"
                             id="confirm-password"
-                            autoComplete="current-password"
+                            autoComplete="new-password"
                             value={confirmPassword}
                             onChange={(e) => setConfirmPassword(e.target.value)}
                         />

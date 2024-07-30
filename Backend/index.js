@@ -4,6 +4,7 @@ const { userRouter } = require('./Routes/userRouter');
 const { notesRouter } = require('./Routes/noteRouter');
 const cors = require('cors');
 const PORT = process.env.PORT;
+console.log(PORT)
 const app = express();
 require('dotenv').config();
 app.use(express.json());
