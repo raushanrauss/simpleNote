@@ -59,7 +59,7 @@ $ npm start (to start the backend)
 
 - User registration and login
 - Authentication using JWT Tokens
-- Story searching  and pagination 
+- Note searching   
 - CRUD operations (Story create, read, update and delete)
 - Responsive Design
 
@@ -86,9 +86,7 @@ This project was created using the following technologies.
 - [express-async-handler](https://www.npmjs.com/package/express-async-handler) - Simple middleware for handling exceptions inside of async express routes and passing them to your express error handlers 
 - [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) - For authentication
 - [Bcryptjs](https://www.npmjs.com/package/bcryptjs) - For data encryption
-- [Nodemailer](https://nodemailer.com/about/) - Send e-mails from Node.js
 - [Dotenv](https://www.npmjs.com/package/dotenv) - Zero Dependency module that loads environment variables
-- [slugify](https://www.npmjs.com/package/slugify) - For encoding titles into a URL-friendly format
 - [cors](https://www.npmjs.com/package/cors) - Provides a Connect/Express middleware
 
 
