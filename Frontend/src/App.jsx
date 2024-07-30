@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-     <h1>Simplenote</h1>
+    
       <AllRoute/>
       
     
